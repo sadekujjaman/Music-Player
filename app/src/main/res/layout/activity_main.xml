@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainActivityId"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.example.saju.musicplayer.MainActivity">
+
+
+    <ListView
+        android:id="@+id/songListViewId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#cfb4ea"
+        android:dividerHeight="2dp">
+
+    </ListView>
+
+</LinearLayout>
