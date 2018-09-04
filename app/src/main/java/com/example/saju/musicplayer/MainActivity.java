@@ -22,6 +22,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.MediaController.MediaPlayerControl;
+import android.widget.Toast;
 
 import com.example.saju.musicplayer.MusicService.MusicBinder;
 
@@ -185,6 +186,16 @@ public class MainActivity extends AppCompatActivity implements MediaPlayerContro
 
         if (item.getItemId() == R.id.action_shuffle) {
             musicService.setShuffle();
+
+            if (musicService.isShuffle()) {
+                item.setIcon(R.drawable.ic_shuffle_on);
+                Toast.makeText(MainActivity.this, "Shuffle On", Toast.LENGTH_SHORT).show();
+            } else {
+                item.setIcon(R.drawable.ic_shuffle_off);
+                Toast.makeText(MainActivity.this, "Shuffle Off", Toast.LENGTH_SHORT).show();
+
+            }
+
         }
 
         if (item.getItemId() == R.id.action_end) {

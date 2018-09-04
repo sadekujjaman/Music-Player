@@ -161,10 +161,15 @@ public class MusicService extends Service
     }
 
     public void setShuffle() {
-        if (shuffle)
+        if (shuffle) {
             shuffle = false;
-        else
+        } else {
             shuffle = true;
+        }
+    }
+
+    public boolean isShuffle() {
+        return shuffle;
     }
 
     @Override

@@ -5,7 +5,7 @@
 
     <item
         android:id="@+id/action_shuffle"
-        android:icon="@drawable/rand"
+        android:icon="@drawable/ic_shuffle_off"
         android:orderInCategory="1"
         android:title="Shuffle"
         app:showAsAction="always" />
